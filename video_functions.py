@@ -21,4 +21,5 @@ def extract_text_from_transcript(url):
     
     # Remove any extra whitespace or newline characters
     extracted_text = [text.strip() for text in extracted_text]
-    return extracted_text
+    concat_text = ''.join(extracted_text)
+    return concat_text
